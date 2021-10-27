@@ -1,0 +1,15 @@
+
+FROM centos
+
+RUN yum install python3 -y
+
+COPY my.py  /my.py
+
+ENTRYPOINT [ "python3", "/my.py" ]
+
+CMD [ "sonam" ]
+
+//* docker build /sks2/ -t mys:v2
+   docker run -it mys:v2 
+  docker run -it mys:v2  popppp
+  *//
